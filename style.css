@@ -1,0 +1,277 @@
+body
+{
+	color: SlateGray;
+	background-color: #F4F4F4;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+.projecttext{
+	
+	color: #333333;
+	height: 536px;
+	width: 355px;
+	float: left;
+	margin-top: 60px;
+	text-align: left;
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif"
+}
+
+
+
+.maintitle
+{
+	font-family: AppleSDGothicNeo-Thin;
+	src: url(AppleSDGothicNeo-Regular.otf);
+	margin-top: 0%;
+	font-size: 60px;
+	color: white;
+	text-shadow: 1px 2px 23px rgba(0,0,0,0.50);
+	text-decoration: none;
+	text-align: center;
+}
+
+#section1 .maintitle{
+	color: white;
+}
+.projectbox .slidetitle
+{	
+	font-family: AppleSDGothicNeo-Thin;
+	src: url(AppleSDGothicNeo-Regular.otf);
+	margin-top: 0%;
+	font-size: 60px;
+	color: #196CBF;
+	text-shadow: 1px 2px 23px rgba(0,0,0,0.50);
+	text-decoration: none;
+	width: 1100px;
+	float: left;
+	text-align: center;
+}
+button{
+	position: absolute;
+	background-color: transparent;
+	color: SlateGray;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 1.1em;
+	
+}
+
+.jobbox button
+{
+	margin-left: 320px;
+}
+fieldset{
+
+	
+	height: 580px;
+	margin-top: 6%;
+	vertical-align: middle;
+	font-family: AppleSDGothicNeo-Regular;
+	src: url(AppleSDGothicNeo-Regular.otf);
+}
+
+
+.projectintrobox
+{
+	text-align: center;	
+	height: 70px;
+}
+
+.projectbox{
+	text-align: justify;
+	border: 2.5px solid;
+	border-radius: 5px;
+	border-color: SlateGray;
+	background-color: White;
+	width:1134px;
+	height: 596px;
+	top: 55%;
+	left: 50%;
+	margin-left: -567px;
+	margin-top: -298px;
+}
+
+.jobbox{
+	text-align: justify;
+	border: 2.5px solid;
+	border-radius: 5px;
+	border-color: white;
+	background-color: white;
+	width: 1003px;
+	height: 397px;
+	top: 59%;
+	left: 53.5%;
+	margin-left: -567px;
+	margin-top: -298px;
+
+}
+
+.jobbox img{
+	float: left;
+	display: block;
+	margin-top: 26px;
+	margin-left: 82px;
+}
+.jobbox .projecttext{
+	
+	color: #333333;
+	height: 536px;
+	width: 437px;
+	float: left;
+	margin-top: -12px;
+	text-align: left;
+	margin-left: 133px;
+	font-size: 14px;
+	font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+	
+}
+.jobbox .slidetitle
+{	
+	font-family: AppleSDGothicNeo-Thin;
+	src: url(AppleSDGothicNeo-Regular.otf);
+	margin-top: 5%;
+	font-size: 47px;
+	color: #196CBF;
+	text-shadow: 1px 2px 23px rgba(0,0,0,0.50);
+	text-decoration: none;
+	float: left;
+	text-align: center;
+	width: 502px;
+
+	margin-right: 139px;
+	margin-left: 18px;
+
+}
+
+.jackits{
+	margin-top: 20px;
+	float: left;
+	margin-left: 6px;
+	margin-right: 6px;
+	
+}
+.worktitle{
+	font-size: 36px;
+	font-family: Optima LT W02 Roman,Arial,Helvetica,sans-serif;
+	text-align: center;
+}
+
+.worktitle position{
+	font-size: 24px;
+	text-align: center;
+}
+.worktitle period{
+	font-size: 18px;
+	text-align: right;
+}
+
+.workpic{
+	margin-top: 20px;
+	display: inline-block;
+
+}
+.worktext{
+	font-family: AppleSDGothicNeo-Regular;
+	src: url(AppleSDGothicNeo-Regular.otf);
+	width: 422px;
+	text-align: left;
+	height: 422px;
+	margin: 10px;
+	margin-left: 20px;
+	float: left;
+	
+}
+
+
+
+.intro
+{
+	color: SlateGray;
+	text-align:left;
+	font-family: AppleSDGothicNeo-Regular;
+	src: url(AppleSDGothicNeo-Regular.otf);
+	font-size: 103%;
+	line-height: 20px;
+	width:80%; 
+	margin-top:39%;
+	margin-left: 15px;
+	margin-right: 10px;
+	float: left;
+}
+
+
+
+
+#MacBookPro{
+	-webkit-animation-delay: .5s;
+	-webkit-animation-duration:2s;
+	float:left;
+	width: 15%;
+	margin-top: 39%;
+
+}
+
+#hackpic{
+	width: 40%;
+
+}
+
+a
+{
+	color:#196CBF;
+
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #333;
+}
+a, button {
+	outline: none;
+}
+
+
+#emailbutton, #twitterbutton, #facebookbutton, #linkedinbutton, #instagrambutton {
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay: 0s;
+	margin:10px;
+	margin-top: 80%
+
+
+}
+#section0{
+	background-image: url(images/header.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin: 0, 0, 100px, 0;
+}
+
+#section1{
+	background-image: url(images/clouds.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin: 0, 0, 100px, 0;
+}
+
+#section2{
+	background-image: url(images/wave.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin: 0, 0, 100px, 0;
+}
+
+
+#section3{
+	background-image: url(images/underwater.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin: 0, 0, 100px, 0;
+}
+
+
+

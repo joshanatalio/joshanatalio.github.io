@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/reveal.css" />
+		<script src="js/snap.svg-min.js"></script>
+		<div style="width: 100%;height: 100%;position: absolute;">
+<section id="grid" class="grid clearfix">
+	<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+		<figure>
+			<img src="images/photo2.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+
+			<figcaption>
+				<h2>Jackit</h2>
+				<p>The multiplayer experience of the century.</p>
+				<button onclick="showpopup()">View</button>
+			</figcaption>
+		</figure>
+	</a>
+	<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+		<figure>
+			<img src="images/photo2.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+
+			<figcaption>
+				<h2>Dine</h2>
+				<p>Enhance your your dining experience.</p>
+				<button>View</button>
+			</figcaption>
+		</figure>
+	</a>
+	<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+		<figure>
+			<img src="images/photo2.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+
+			<figcaption>
+				<h2>Goalie</h2>
+				<p>Getting better through community.</p>
+				<button>View</button>
+			</figcaption>
+		</figure>
+	</a>
+	<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+		<figure>
+			<img src="images/photo2.png" />
+									<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+
+			<figcaption>
+				<h2>Emotionall</h2>
+				<p>Are you feeling it now?</p>
+				<button>View</button>
+			</figcaption>
+		</figure>
+	</a>
+</section>
+</div>
+<div id="popup" style="visibility:hidden; margin-bottom:50px;position: absolute;z-index: 20; color:black">
+<fieldset style="border-width: 3px;
+	border-radius: 5px;
+	border-color: #196CBF;
+	background-color: white;
+	width:100%;
+	margin: 10px;
+	height: 100%;
+	padding-right: 0px;
+	font-family: AppleSDGothicNeo-Regular;">
+	
+<h1> hellfbfm,nf,nf,nf,nf,mnf,mnf,nf,mnf,mnfm,fnm,o </h1>	
+</fieldset>
+
+</div>
+
+
+</html>
+<script type="text/javascript">
+	function showpopup(){
+	var el = document.getElementById("popup");
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+}
+</script>
+<script>
+
+(function() {
+     
+    function init() {
+        var speed = 250,
+            easing = mina.easeinout;
+ 
+        [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+            var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                pathConfig = {
+                    from : path.attr( 'd' ),
+                    to : el.getAttribute( 'data-path-hover' )
+                };
+ 
+            el.addEventListener( 'mouseenter', function() {
+                path.animate( { 'path' : pathConfig.to }, speed, easing );
+            } );
+ 
+            el.addEventListener( 'mouseleave', function() {
+                path.animate( { 'path' : pathConfig.from }, speed, easing );
+            } );
+        } );
+    }
+ 
+    init();
+ 
+})();
+
+
+</script>
