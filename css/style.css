@@ -319,15 +319,7 @@ a:active {
     cursor: default !important;
 }
 
-footer img:hover{
-    opacity: .7;
-    width: 100px;
-    height: 100px;
-     -moz-transition: background-color 1.15s linear;
-    -o-transition: background-color 1.15s linear;
-    -webkit-transition: background-color 1.15s linear;
-    transition: background-color 1.15s linear;
-}
+
 
 .input-text,
 .textarea {
@@ -522,7 +514,7 @@ footer {
     color: black;
     font-size: 16px;
     line-height: 28px;
-    padding: 90px 0px 90px 258px;
+    padding: 90px 0px 50px 0px;
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -532,17 +524,23 @@ footer {
 }
 
 footer img{
-    float: left;
+    
     margin-top: -33px;
     margin-right: 10px;
     height: 75px;
 
 }
 
+.copy{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
 footer p {
-    float: left; 
-    margin-right: 10px;
-    margin-left: 10px;
+margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 /* home --------------------------  */
