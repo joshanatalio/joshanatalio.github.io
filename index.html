@@ -1,458 +1,165 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
 	<title>Josh Anatalio</title>
-	<!-- This site was made by Josh Anatalio -->
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="960_12_col.css" />
-	<link rel="stylesheet" type="text/css" href="animate.css" />
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/reveal.css" />
-	<script src="js/snap.svg-min.js"></script>
-	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="jquery.easings.min.js"></script>
-	<script type="text/javascript">
-
-		function addbounce() {
-			$(this)._removeClass().addClass('bounce animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () { $(this)._removeClass(); });
-		}
-
-		$(document).ready(function () {
-			$('#fullpage').fullpage();
-var buttons = $('.contactbutton');
-buttons.hover(addbounce);
-
-});
-
-</script>
-
+	<meta name="description" content="Josh Anatalio is a UCSD Computer Science student with a lot to give.">
+	<meta name="keywords" content="UCSD, student, Josh, Anatalio, Computer Science, San Diego, Programmer">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/component3.css" />
+    
+    <script src="js/modernizr.custom.js"></script>
+    
 </head>
 <link rel="icon" 
-      type="image/png" 
-      href="images/joshicon.png">
-<body>
-	<div id="fullpage">
-		<div class="section active" id="section0">
-
-			<div class=" intro fadeInRight animated">
-				Hello! My name is Josh Anatalio and I am currently a third year Computer Science student at the <a href="https://www.ucsd.edu" target="_blank">University of California, San Diego</a>. 
-				<br>
-				<br>
-				I really like snorkeling, cycling, and destroying people at <a href="http://en.wikipedia.org/wiki/The_Settlers_of_Catan" target="_blank"> The of Settlers Catan</a>, to name a few. <br> I also enjoy creating things by pressing keys on a keyboard in specific sequences.
-				<br>
-				<br>
-				If you want to know more about me, you can download my resume <a href="https://drive.google.com/file/d/0B3VLuq-tu4oLeFFmcUkxR1h6Z0U/view?usp=sharing" target="_blank">here</a>, or scroll down to see some of my projects, hobbies, and different ways to get in touch with me. 
-			</div>
-			<a href="http://www.apple.com/macbook-pro/" target="_blank" id="MBP" ><img src="images/MBP.png" id="MacBookPro"  class="animated fadeInDown"></a>
-		</div>
-
-		<div class ="section" id="section1">
-			<div class="jobbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupMolina">
-				<div class="slidetitle"> Molina Healthcare </div>
-
-				<button style="position:absolute; z-index:30" onclick="togglejobpopup()" id="MolinaX">X</button>
-				<img src="images/molinalogo.png" />
-				<div class="projecttext">
-
-					I interned as a Software Architect at Molina Healthcare during the summer of 2014. I was able to complete my project which involved designing and implementing a web based budgeting system that the accounting department could use to safely create, update, and maintain a plan for different areas of the company's finances.
-					<br>
-					<br>
-					My application was accessible through multiple browsers and would allows employees to access the budgeting information from any location and with any computer.  The application was created using C#, SQL, HTML/CSS, and Javascript.
-					<br>
-					<br>
-					Molina Healthcare is a <a href="http://en.wikipedia.org/wiki/Fortune_500" target="_blank">FORTUNE 500</a>, multi-state health care organization, that arranges for the delivery of health care services and offers health information management solutions to nearly five million individuals. More information <a href="http://www.molinahealthcare.com/en-US/Pages/home.aspx" target="_blank">here</a>.
-				</div>
-				
-			</div> <!-- End of Molina Box -->
-			<div class="jobbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupCSE">
-				<div class="slidetitle"> UCSD CSE Department </div>
-
-				<button style="position:absolute; z-index:30" onclick="togglejobpopup()" id="CSEX">X</button>
-				<img src="images/cselogo.png" />
-				<div class="projecttext">
-
-					I am currently employed by UCSD's Computer Science Department as an Undergraduate Tutor. A tutor position is similar to a Teaching Assistant, but with less repsonsibilities. I have tutored for CSE12 (Data Structures in Java) and am currently tutoring for CSE8a (Introduction to Programming In Java). 
-					<br>
-					<br>
-					As a tutor, I get to actively review student's code, then provide feedback to student's by helping them break down their problem. My experience as a tutor has not only benefited other students, but has also helped impoved my communication and teaching skills. 
-					<br>
-					<br>
-					I individually assist hundreds of students with programming assignments, homework, and in-class exams. As a tutor, I get to work directly with a professor to help provide the best experience for other students in my community. 
-
-				</div>
-				
-			</div> <!-- End of Molina Box -->
-			<div class="jobbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupLakewood">
-				<div class="slidetitle"> Lakewood Aquatics </div>
-
-				<button style="position:absolute; z-index:30" onclick="togglejobpopup()" id="LakewoodX">X</button>
-				<img src="images/lakewoodlogo.png" />
-				<div class="projecttext">
-
-					Lakewood Aquatics is a Competitive Swim Team based in Lakewood, California. I have worked as an Age Group Swim Coach for the last three years and get to work with competivie swimmers from the ages of 8 to about 18. As an Age Group Coach, I get to work individually with swimmers about proper stroke techique, drag effeciency, and physical and mental preparation regarding competition.
-					<br>
-					<br>
-					Coaching has allowed to me to sharpen and refine my teaching and communication skills in a team-oriented environment. Coaching is one of my favorite hobbies because I really enjoy working with children and being given the oppurtunity to impact the lives of a generation under my own.
-					<br>
-					<br>
-					More information about Lakewood Aquatics <a href="http://lakewoodaquatics.org/" target="_blank">here.</a>
-
-				</div>
-				
-			</div> <!-- End of Molina Box -->
-			<div class="maintitle"> Work Experience </div>
-			<section id="grid" class="grid clearfix jobgrid">
-
-				<a data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure>
-						<img src="images/Molina.png" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-
-						<figcaption class="clickablejob" id="MolinaP">
-							<h2>Molina Healthcare</h2>
-							<p>Software Architect Intern</p>
-							<button onclick="togglejobpopup()" id="MolinaV"  >View</button>
-						</figcaption>
-					</figure>
-				</a>
-
-				<a data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure class="clickablejob" id="CSEP">
-						<img src="images/CSE.png" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-
-						<figcaption>
-							<h2>UCSD CSE Department</h2>
-							<p>CSE 12/8A Tutor</p>
-							<button onclick="togglejobpopup()" id="CSEV">View</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-					<figure class="clickablejob" id="LakewoodP">
-						<img src="images/Lakewood.png" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
-
-						<figcaption>
-							<h2>Lakewood Aquatics</h2>
-							<p>Assistant Age Group Coach</p>
-							<button onclick="togglejobpopup()" id="LakewoodV">View</button>
-						</figcaption>
-					</figure>
-				</a>
-
-			</section>
-
-		</div> <!-- End of section1 -->
-
-		<div class="section" id="section2">
-
-			<div class="projectbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupJackit">
-				<div class="slidetitle"> Jackit </div>
-				<button style="position:absolute; z-index:30" onclick="toggleprojectpopup()" id="JackitX">X</button>
-				<div>
-					<img id="jackit1" src="images/jackit1.png" class="jackits">
-					<img id="jackit2" src="images/jackit2.png" class="jackits">
-					<img id="jackit3" src="images/jackit3.png" class="jackits">
-					<br>
-				</div>
-				<div class="projecttext">
-
-					Jackit is a iOS application that challeneges players from around the world in an intense shaking duel. It users the iPhone's gyroscope and accelerometer to create a quick and exciting gameplay experience for players. Player scores are calculated by how fast they can shake their phone in a ten second period. You can play solo in practice mode, or challenge another random player from all over the world! Become an all-star player and you'll be able to unlock some of the in-game achievement badges. Jackit also provides statistics for how each player performs, win-loss ratio, high score, etc. 
-					<br>
-					<br>
-					Coded Primarily in Objective-C, Ruby on Rails.
-					<br>
-					<br>
-					Technologies Used: Xcode, Parse, REST API, Photoshop.
-					<br>		
-					<br>
-					External Links: <a href="http://www.wejackit.com/" target="_blank">Website</a>                
-				</div>
-			</div> <!-- End of Jackit Project Box -->
-
-			<div class="projectbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30; " id="popupDine">
-				<div class="slidetitle"> Dine </div>
-				<button style="position:absolute; z-index:30" onclick="toggleprojectpopup()"id="DineX">X</button>
-				<div>
-					<img id="dine2" src="images/dine2.png" class="jackits">
-					<img id="dine3" src="images/dine3.png" class="jackits">
-					<img id="dine1" src="images/dine1.png" class="jackits">
-					<br>
-				</div>
-				<div class="projecttext">
-
-					Dine is an iOS application built to enhance your dining experience. This companion can make a visit to your favorite restaurant faster, easier, and more enjoyable.
-					<br>
-					<br>
-					With Dine, you can:
-					<ul>
-						<li> Add your name to the restaurant's waiting list, and be notificed when your table is ready.
-							<li> View beautiful pictures of each individual menu item, along with pricing, nutritional, and detailed dish information for each item. 
-								<li> Spontaneously build a meal using Dine's built in meal randomizer that allows you to set restrictions on a meal's price, calorie range, or other dietary preferences such as vegetarian or gluten-free entrees.
-									<li> Pay the restaurant directly for your meal using Venmo (C), connected via Facebooks's AppLinks.   
-									</ul>
-									<br>
-									Dine was voted "Best Application" by a class of 200 CSE students. 
-									<br>
-									<br>
-									Technologies Used: Xcode, Parse, AppLinks, iBeacon, Photoshop.                
-								</div>
-							</div> <!-- end of Dine Project box -->
-
-							<div class="projectbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupGoalie">
-								<div class="slidetitle"> Goalie </div>
-								<button style="position:absolute; z-index:30" onclick="toggleprojectpopup()" id="GoalieX">X</button>
-								<div>
-									<img id="goalie1" src="images/goalie1.png" class="jackits">
-									<img id="goalie2" src="images/goalie2.png" class="jackits">
-									<img id="goalie3" src="images/goalie3.png" class="jackits">
-									<br>
-								</div>
-								<div class="projecttext">
-
-									Goalie is a goal <strike>setting</strike> achieving application that I am currently working on. Goalie allows users to set goals for themselves and achieve more through the power of community. 
-									<br>
-									<br>
-									You can set fitness goals, sleeping goals, reading goals, and much more! Goalie allows friends to see your progress and even lets friends work together on the same goal. The application will feature Health Kit integration will be able to track specific kinds of goals such as biking or running. Goalie will also feature a wide variety of achievments for a more fun and competivie environment. 
-									<br>
-									<br>
-									Goalie will be powered using Google's App Engine and is expected to be completed before 2015!
-
-
-									<br>
-									<br>
-									Coded Primarily in Objective-C, Swift, Python.
-									<br>
-									<br>
-									Technologies Used: Xcode, Google App Engine, Sketch.
-									<br>		
-									<br>
-									
-								</div>
-							</div> <!-- End of Goaolie Project Box -->
-
-							<div class="projectbox" style="visibility:hidden; position:absolute; margin-bottom:50px;z-index:30;" id="popupEmotionall">
-								<div class="slidetitle"> Emotionall </div>
-								<button style="position:absolute; z-index:30" onclick="toggleprojectpopup()" id="EmotionallX">X</button>
-								<div>
-									<img id="emotionall1" src="images/Emotionall.png" class="jackits">
-									
-									<br>
-								</div>
-								<div class="projecttext">
-
-									Emotionall was an applciation I helped create with a group of friends at Hack UCI when we wanted to learn Ruby on Rails and the
-									basics of Web Development. We created the application in a short amoount of time, and hosted it on Heroku. We learned about using APIs from Twitter, Soundcloud, and Flickr. 
-									<br>
-									<br>
-									Emotionall lets users type in how they feel or how they want to feel and presents them with different mediums of expression such as text, music, photos, and videos. You can use Emotionall at any time and it will do its best to empathize with how you feel. 
-
-
-									<br>
-									<br>
-									Coded Primarily in HTML/CSS, Javascript, Ruby on Rails.
-									<br>
-									<br>
-									Technologies Used: Twitter API, Soundcloud API, Flickr API.
-									<br>		
-									<br>
-									See it <a href="http://www.feelemotionall.com/" target="_blank">here</a>.
-									
-								</div>
-							</div> <!-- End of Emotionall Project Box -->
-
-
-
-							<div class="maintitle"> My Projects </div>
-							<section id="grid" class="grid clearfix">
-
-								<a data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z" >
-									<figure class="clickable" id ="JackitP">
-										<img src="images/jackitp.png" />
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-
-										<figcaption>
-											<h2>Jackit</h2>
-											<p>The multiplayer experience of the century.</p>
-											<!--<button onclick="showpopup()" id="JackitV"  >View</button>-->
-										</figcaption>
-									</figure>
-								</a>
-
-								<a data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-									<figure class="clickable" id ="DineP">
-										<img src="images/dinep.png" />
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-										<figcaption>
-											<h2>Dine</h2>
-											<p>Enhance your your dining experience.</p>
-											
-										</figcaption>
-									</figure>
-								</a>
-								<a  data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-									<figure class="clickable" id ="GoalieP">
-										<img src="images/goaliep.png" />
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-
-										<figcaption>
-											<h2>Goalie</h2>
-											<p>Getting better through community.</p>
-											
-										</figcaption>
-									</figure>
-								</a>
-								<a data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-									<figure class="clickable" id ="EmotionallP">
-										<img src="images/emotionallp.png" />
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-
-										<figcaption>
-											<h2>Emotionall</h2>
-											<p>Are you feeling it now?</p>
-											
-										</figcaption>
-									</figure>
-								</a>
-							</section>
-
-						</div><!-- end of main project slide-->
-<!--
-    <div class="slide">
-      <div class="slidetitle"> Dine </div>
-      <div class="projectbox">
-        <fieldset>
-         <img id="dine2" src="images/dine2.png" class="jackits">
-         <img id="dine3" src="images/dine3.png" class="jackits">
-         <img id="dine1" src="images/dine1.png" class="jackits">
-         <div class="projecttext">
-          Dine is an iOS application built to enhance your dining experience. This companion can make a visit to your favorite restaurant faster, easier, and more enjoyable.
-          <br>
-          <br>
-          With Dine, you can:
-          <ul>
-            <li> Add your name to the restaurant's waiting list, and be notificed when your table is ready.
-              <li> View beautiful pictures of each individual menu item, along with pricing, nutritional, and detailed dish information for each item. 
-                <li> Spontaneously build a meal using Dine's built in meal randomizer that allows you to set restrictions on a meal's price, calorie range, or other dietary preferences such as vegetarian or gluten-free entrees.
-                  <li> Pay the restaurant directly for your meal using Venmo (C), connected via Facebooks's AppLinks.   
-                  </ul>
-
-                  Technologies Used: Xcode, Parse, AppLinks, iBeacon, Photoshop.         	
-                </li>
-              </div>
-            </fieldset>
-          </div>
-          <div class="slide ">
-           <div class="slidetitle"> Goalie </div>
-
-
-         </div>
-       </div>
-   -->
-
-
-   <div class="section" id="section3" style="text-align:center">
-
-
-   	<a href="https://www.facebook.com/josh.anatalio" target="_blank" class="contactbutton" id="facebookbutton">
-   		<img src="images/facebook.png" alt="Stalk Me" /></a> 
-   		<a href="https://www.twitter.com/joshanatalio" target="_blank" class="contactbutton" id="twitterbutton">
-   			<img src="images/twitter.png" alt="Tweet Me." /></a> 
-   			<a href="mailto:josh@anatalio.net" class="contactbutton" id="emailbutton">
-   				<img src="images/email.png" alt="Talk to Me." /></a>
-   				<a href="http://instagram.com/joshanatalio" target="_blank" class="contactbutton" id="instagrambutton">
-   					<img src="images/instagram.png" alt="Say Cheese." /></a> 
-   					<a href="https://www.linkedin.com/pub/josh-anatalio/9b/69b/79" target="_blank" class="contactbutton" id="instagrambutton">
-   						<img src="images/linkedin.png" alt="Connect with Me." /></a> 
-   						<a href="https://www.github.com/joshanatalio" target="_blank" class="contactbutton" id="instagrambutton">
-   							<img src="images/github.png" alt="Connect with Me." /></a> 
-   							<a href="https://www.medium.com/@heyitsjosh69" target="_blank" class="contactbutton" id="instagrambutton">
-   								<img src="images/medium.png" alt="Connect with Me." /></a> 
-   							</div>
-   						</div> <!-- end of full page -->
-
-
-
-   					</body>
-   					</html>
-   					<script src="js/wow.min.js"></script>
-
-   					<script type="text/javascript">
-   						function togglejobpopup(){
-   							var b = (this.id== null) ? document.activeElement.id : this.id;
-   							var el = document.getElementById("popup"+ b.substring(0,b.length - 1));
-              				var a = $('#popup'+ b.substring(0,b.length - 1)); //jQuery
-              				
-              				if(a != null){
-              					if(el.style.visibility == "hidden"){
-              						el.style.visibility = "visible";
-              						a._removeClass().addClass('jobbox zoomInUp animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () { a._removeClass(); a.addClass('jobbox');el.style.visibility = "visible"; });
-
-              					}
-              					else{
-              						a._removeClass().addClass('jobbox zoomOut animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () { a._removeClass(); a.addClass('jobbox');el.style.visibility = "hidden"; });
-              					}
-
-              				}
-              			}
-
-              			function toggleprojectpopup(){
-              				var b = (this.id == null) ? document.activeElement.id : this.id;
-              				var el = document.getElementById("popup"+ b.substring(0,b.length - 1));
-              				var a = $('#popup'+ b.substring(0,b.length - 1)); //jQuery
-              				
-              				if(a != null){
-              					if(el.style.visibility == "hidden"){
-              						el.style.visibility = "visible";
-              						a._removeClass().addClass('projectbox bounceInDown animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () { a._removeClass(); a.addClass('projectbox');el.style.visibility = "visible"; });
-
-              					}
-              					else{
-              						a._removeClass().addClass('projectbox bounceOutDown animated').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () { a._removeClass(); a.addClass('projectbox');el.style.visibility = "hidden"; });
-              					}
-
-              				}
-              				
-              			}
-              			$(document).ready(function () {
-              				var p = $('.clickable');
-              				var q = $('.clickablejob');
-              				p.click(toggleprojectpopup);
-              				q.click(togglejobpopup);
-
-
-              			});
-              		</script>
-              		<script>
-
-              			(function() {
-
-              				function init() {
-              					var speed = 250,
-              					easing = mina.easeinout;
-
-              					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-              						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-              						pathConfig = {
-              							from : path.attr( 'd' ),
-              							to : el.getAttribute( 'data-path-hover' )
-              						};
-
-              						el.addEventListener( 'mouseenter', function() {
-              							path.animate( { 'path' : pathConfig.to }, speed, easing );
-              						} );
-
-              						el.addEventListener( 'mouseleave', function() {
-              							path.animate( { 'path' : pathConfig.from }, speed, easing );
-              						} );
-              					} );
-              				}
-
-              				init();
-
-              			})();
-
-              		</script>
+type="image/png" 
+href="images/joshicon.png">
+
+<body class = "no-js">
+	<div class="main">
+		<header>
+          <div class="wrap">
+            <div class="header-wrapper">
+                <h1>Josh Anatalio</h1>
+                <p>University of California, San Diego: Class of 2016 </br> Computer Science Major </br> </p>
+
+                <div class="buttons-wrapper">
+
+                </div>
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="wrap">
+                <div class="features-columns clearfix">
+                    <div class="feature">
+                        <div class="ico-like"></div>
+                        <h4>Developer</h4>
+                        <p>Computer Science is my major, but it's also one of my biggest hobbies. I have a passion for building fast and efficient programs that can help in different areas all over the world.  </p>
+                    </div><!-- feature -->
+                    <div class="feature">
+                        <div class="ico-help"></div>
+                        <h4>Student</h4>
+                        <p>I am currently a full-time student at the University of California, San Diego. I love learning new things and plan to graduate in 2016! Lately, I have been interested in Computation Theory, Usibility Design, and Cryptography.</p>
+                    </div><!-- feature -->
+                    
+                    <div class="feature">
+                        <div class="ico-present"></div>
+                        <h4>Explorer</h4>
+                        <p>When I don't have my face buried in my laptop or a book, I like to hit the beach and enjoy the water along with some sun. I'm always willing to try new foods, and love exploring new and unknown territories.</p>
+                    </div><!-- feature -->
+                </div><!-- features-columns -->
+            </div><!-- wrap -->
+        </section><!-- features -->
+        <!-- tabs --> 
+        <section class="tabsblock">
+            <div id ="work" class="wrap">
+                <div class="tab">
+                    <ul class="tabs clearfix">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul><!-- tabs -->
+                    <div class="box visible">
+                        <div class="box-text">
+                            <h3>Software Architect</h3>
+                            <p>I interned as a Software Architect for Molina Healthcare in the summer of 2015. I created a Web-Based Budgeting Application that helped managed the company's finances in a faster, safer, and a friendlier environment. Built with HTML/CSS/Javascript and a C# back-end.</p>
+                        </div>
+                        <img src="images/MolinaLogo.png" width="437" height="459" alt="">
+                    </div><!-- box -->
+                    <div class="box">
+                        <div class="box-text">
+                            <h3>CSE Undergraduate Tutor</h3>
+                            <h5>Courses: Introduction to Java, Data Structures in Java.</h5>
+                            <p> I have helped manage classes with over 600 students, in which I have led lab sessions, proctored exams, graded and assisted students in their programming assignments. My duties are similair to a TA's but with less responsibility.</p>
+                        </div>
+                        <img src="images/CSELogo.png" width="437" height="459" alt="">
+                    </div><!-- box -->
+                    <div class="box">
+                        <div class="box-text">
+                            <h3>Age Group Coach</h3>
+                            <p>I also work as a swim coach at Lakewood Aquatics. Here, I get to work with children of all ages and teach them about water safety, stroke techinique, and the mental and physical prepartation required for competition. I ejoy being able to mentor others, and am recognized as an official coach by USA Swimming.</p>
+                        </div>
+                        <img src="images/LakewoodLogo.png" width="437" height="459" alt="">
+                    </div><!-- box -->
+                </div><!-- tab --> 
+            </div><!-- wrap -->
+        </section>
+        <!-- /tabs --> 
+        <!--  App Gallery -->
+        <div class="main app">
+            <div id="ac-wrapper" class="ac-wrapper app">
+                <h2 class="app">My Projects<span class="app">Personal & Concept Work</span></h2>
+                <div class="ac-device app">
+                    <a class="app" href="#"><img src="images/GoalieScreen1.png" class="app" /></a>
+                    <h3 class="ac-title app">Win More Together.</h3>
+                    <h4 class="ac-desc app">Goalie is a goal <strike>setting</strike> achieving application that I am currently working on. <br> <br> You can set goals for yourself and learn to achieve more through the power of community.<br> <br> Goalie allows friends to see your progress and even lets friends work together on the same goal. </h4>
+                    <nav>
+                        <span>&lt;</span>
+                        <span>&gt;</span>
+                    </nav>
+                </div>
+                <div class="ac-grid app">
+                    <a href="#" class="app"><img class="app" src="images/GoalieScreen1.png"/><span class="app">Win More Together.</span><description>Goalie is a goal <strike>setting</strike> achieving application that I am currently working on. <br> <br> You can set goals for yourself and learn to achieve more through the power of community.<br> <br>  Goalie allows friends to see your progress and even lets friends work together on the same goal. </description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/GoalieScreen2.png"/><span class="app">Set. Acheive. Repeat.</span><description>You can set fitness goals, sleeping goals, reading goals, and much more!<br><br>  Goalie will also feature a wide variety of achievments for a more fun and competivie environment. <br><br>The application will feature Health Kit integration will be able to track specific kinds of goals such as biking or running. </description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/GoalieScreen3.png"/><span class="app">It's Now or Never.</span><description>Goalie will be powered using Google's App Engine and is expected to be completed before 2015! </br></br>Coded Primarily in Objective-C, Swift, Python.</br></br>Technologies Used: Xcode, Google App Engine, Sketch. </description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/DineScreen2.png"/><span class="app">So many choices, so little time. </span><description>Dine is an iOS application built to enhance your dining experience. This companion can make a visit to your favorite restaurant faster, easier, and more enjoyable.<br><br>With Dine, you can add your name to the restaurant's waiting list, and be notificed when your table is ready. <br><br> Dine was voted "Best Application" by a class of 200 CSE students. 
+                    </description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/DineScreen3.png"/><span class="app">Looks good.<br> Tastes good. Is good.</span><description> Dine allows you to view beautiful pictures of each individual menu item, along with pricing, nutritional, and detailed dish information for each item. <br><br>You can even pay the restaurant directly for your meal directly through Dine and Venmo&copy;, connected via Facebooks's AppLinks.
+
+                    </description></a>
+
+
+                    <a href="#" class="app"><img class="app" src="images/DineScreen1.png"/><span class="app">Shake it to Make it.</span><description>Spontaneously build a meal using Dine's built in meal randomizer that allows you to set restrictions on a meal's price, calorie range, or other dietary preferences such as vegetarian or gluten-free entrees.<br><br>Technologies Used: Xcode, Parse, AppLinks, iBeacon, Photoshop.</description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/JackItScreen2.png"/><span class="app">Shake it Out.</span><description>Jackit is a iOS application that challeneges players from around the world in an intense shaking duel.<br><br> It uses the iPhone's gyroscope and accelerometer to create a quick and exciting gameplay experience for players.<br><br>Player scores are calculated by how fast they can shake their phone in a ten second period.</description></a>
+
+                    <a href="#" class="app"><img class="app" src="images/JackItScreen1.png"/><span class="app">Practice Makes Perfect</span><description>You can play solo in practice mode, or challenge another random player from all over the world! Become an all-star player and you'll be able to unlock some of the in-game achievement badges.<br><br> Jackit also provides statistics for how each player performs, win-loss ratio, high score, etc. <br><br>Coded Primarily in Objective-C, Ruby on Rails. <br>Technologies Used: Xcode, Parse, REST API, Photoshop. </description></a> 
+
+
+                </div>
+            </div>
+            <p id="click">Click to see more.</p>
+            <p id="tap"> Tap to see more.</p>
+        </div>
+        <!-- App Gallery -->
+        <footer>
+            <div class="copy">
+                <a href="https://www.facebook.com/josh.anatalio" target="_blank" class="contactbutton" id="facebookbutton"><img src="images/facebook.png" alt="Stalk Me" /></a> 
+                <a href="https://www.twitter.com/joshanatalio" target="_blank" class="contactbutton" id="twitterbutton"><img src="images/twitter.png" alt="Tweet Me." /></a> 
+                <a href="mailto:josh@anatalio.net" class="contactbutton" id="emailbutton"><img src="images/email.png" alt="Talk to Me." /></a>
+                <a href="http://wp.me/59MBo" target="_blank" class="contactbutton" id="blogbutton"><img src="images/blogicon.png" alt="Stalk Me" /></a> 
+                <p>Copyright &copy; 2014 <a href="#">Josh Anatalio</a></p>
+                <a href="https://drive.google.com/file/d/0B3VLuq-tu4oLLVgteWZjbm9MZjg/view?usp=sharing" target="_blank" class="contactbutton" id="facebookbutton"><img src="images/resumeicon.png" alt="Stalk Me" /></a> 
+                <a href="http://instagram.com/joshanatalio" target="_blank" class="contactbutton" id="instagrambutton"><img src="images/instagram.png" alt="Say Cheese." /></a> 
+                <a href="https://www.linkedin.com/pub/josh-anatalio/9b/69b/79" target="_blank" class="contactbutton" id="instagrambutton"><img src="images/linkedin.png" alt="Connect with Me." /></a> 
+                <a href="https://www.github.com/joshanatalio" target="_blank" class="contactbutton" id="instagrambutton">
+                    <img src="images/github.png" alt="Connect with Me." /></a> 
+                    
+                </div><!-- copy -->
+                <div class="social">
+                </div><!--social -->
+            </div><!-- wrap -->
+        </footer>
+        <!-- /.discover clearfix -->
+    </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/appshowcase_3.js"></script>
+    <script>
+        $(function() {
+            AppShowcase.init();
+        });
+    </script>
+
+    </html>
