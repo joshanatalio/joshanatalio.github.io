@@ -443,7 +443,7 @@ input:focus::-webkit-input-placeholder {
 
 header {
     padding: 104px 0;
-    background: url(../images/mount.jpg) no-repeat 40% 66%;
+    background: url(../images/mount.png) no-repeat 40% 66%;
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
